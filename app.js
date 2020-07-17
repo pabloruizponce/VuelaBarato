@@ -7,6 +7,7 @@ const bodyParser = require('body-parser')
 const nodemailer = require("nodemailer")
 
 const crendentials = fs.readFileSync(__dirname + '/credentials.txt').toString().split("\n")
+const TIME_REPORT = 60
 
 let transporter = nodemailer.createTransport({
     host: 'smtp.googlemail.com', // Gmail Host
@@ -51,7 +52,7 @@ async function sendReport() {
     })
 
     console.log("Report enviado")
-    setTimeout(sendReport, 1*1000*60)
+    setTimeout(sendReport, TIME_REPORT*1000*60)
 }
 
 

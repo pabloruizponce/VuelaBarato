@@ -1,2 +1,1 @@
-https://www.ryanair.com/es/es/vuelos-baratos/?from=ALC&out-from-date=2020-07-17&out-to-date=2020-10-17&budget=150&trip-type-category=CTY&to=LGW
-https://www.ryanair.com/es/es/vuelos-baratos/?from=ALC&out-from-date=2020-07-17&out-to-date=2020-10-17&budget=150&trip-type-category=CTY&to=SXF
+https://www.ryanair.com/es/es/vuelos-baratos/?from=ALC&out-from-date=2020-07-17&out-to-date=2021-07-17&budget=150&trip-type-category=CTY
