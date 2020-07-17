@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    font-family: 'Assistant';
+    margin: 0;
+}
+.logo {
+    margin-top: 30px;
+    width:20%;
+    min-width: 300px;
+}
+
+.url{
+    width: 90%;
+    max-width: 700px;
+    margin-bottom: 25px;
+    height: 30px;
+}
+
+.sButton{
+    width: 90%;
+    max-width: 700px;
+    height: 50px;
+    
+    color: whitesmoke;
+    background-color: #093ba0;
+    border: 1.5px solid #093ba0;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+}
+
+.rButton{
+    width: 90%;
+    max-width: 700px;
+    height: 35px;
+    
+    color: whitesmoke;
+    background-color: #f0c730;
+    border: 1.5px solid #f0c730;
+    border-radius: 0 0 5px 5px;
+    text-decoration: none;
+}
+
+.flight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    height: 100px;
+    width: 90%;
+    max-width: 700px;
+
+   border:1.3px solid #093ba0;
+   border-radius: 5px;
+
+   margin-bottom: 20px;
+   transition: 0.3s;
+}
+
+.flight:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    height: 120px;
+    width: 95%;
+    max-width: 750px;
+
+   border:1.3px solid #093ba0;
+   border-radius: 5px;
+
+   margin-bottom: 20px;
+}
+
+.flight:hover .price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 21%;
+    height: 121px;
+
+    border-radius: 0 5px 5px 0;
+
+    color: whitesmoke;
+    background-color: #093ba0;
+}
+
+.flight:hover .element{
+    width: 42%;
+}
+
+.element{
+    width: 40%;
+    transition: 0.3s;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    height: 101px;
+
+    border-radius: 0 5px 5px 0;
+
+    color: whitesmoke;
+    background-color: #093ba0;
+    transition: 0.3s;
+}

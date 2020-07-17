@@ -1,0 +1,31 @@
+{
+  "name": "vuelabarato",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pabloruizp/VuelaBarato.git"
+  },
+  "author": "Pablo Ruiz Ponce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabloruizp/VuelaBarato/issues"
+  },
+  "homepage": "https://github.com/pabloruizp/VuelaBarato#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "got": "^11.5.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.10",
+    "smtp-server": "^3.7.0"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+    <html>
+      <head>
+            <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+            <link rel="stylesheet" href="style.css">
+            <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body>
+            <img src='./logo.png' class="logo" onclick='window.location.href=window.location.href.replace("/url", "")'>
+            <p>Introduzca la nueva URL: </p>
+            <form action="/url" method="POST">
+                  <input type="text" name="url" id="url" class="url">
+                  <br>
+                  <input type="submit" class="sButton" value="Añadir URL">
+            </form>
+            <form action="/url" method="POST">
+                  <input type="text" name="url" id="url" class="url" value="remove" style="display: none;">
+                  <input type="submit" class="rButton" value="Borrar todas las URLs">
+                  <br>
+            </form>
+            <p id="log"></p>
+
+            <script>
+                  const queryString = window.location.search;
+                  const urlParams = new URLSearchParams(queryString);
+          
+                  const error = urlParams.get("error")
+                  const good = urlParams.get("good")
+          
+                  if (urlParams.has("error")) {
+                        document.getElementById("log").innerHTML = "La URL introducida no es correcta"
+                        document.getElementById("log").style = "color:red"
+                  } else if (urlParams.has("good")) {
+                        switch (urlParams.get("good")) {
+                              case "1":
+                                    document.getElementById("log").innerHTML = "La nueva URL se guardo con éxito"
+
+                                    break
+                              case "2":
+                                    document.getElementById("log").innerHTML = "Se han borrado todas las URLs correctamente"
+                                    break
+                        }
+                        document.getElementById("log").style = "color:green"
+                  }
+                </script>
+      </body>
+      </html>
